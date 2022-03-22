@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!------------------CDN links for jQUERY--------------->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        
+
+        <script>
+            $(document).ready(function(){
+               $(".btn").click(function(){
+                   $("p").hide(8000);
+                   $("p").show(5000);
+               });
+                $(".btn2").click(function(){
+                   $("p").fadeIn(8000);
+                   $("p").fadeOut(5000);
+               });
+                $(".btn3").click(function(){
+                   $("p").slideUp(8000);
+                   $("p").slideDown(5000);
+               });
+                $(".btn5").click(function(){
+                   
+                   $("p").animate({
+                       left: '250px',
+                       opacity: '0.5',
+                       height: '150px',
+                       width: '150px',
+                       size: '60px'
+                   });
+               });
+            });
+            
+        </script>
+        
+        <meta charset="utf-8">
+        
+    <title>JS Project</title>
+        <link rel="stylesheet" href="css.css">
+        <script type="text/javascript" src="javascript.js"></script>
+        
+    </head>
+    <script type="text/javascript" src="javascript.js"></script>
+    <body>
+        
+        <!----------------------JavaScript------------------------>
+        
+        <h1><u>JS Project</u></h1>
+    <div>
+        <form action="/file.html" name="userform" method="post" onsubmit="return formData()">
+        <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your name..">
+            
+            <label for="country">Country</label>
+            <select id="country" name="country" >
+                <option value="" disabled selected hidden>select country</option>
+                <option value="Canada">Canada</option>
+                <option value="India">India</option>
+                <option value="America">America</option>
+                <option value="U.A.E">U.A.E</option>
+            </select>
+            
+            <input type="submit">
+            <button type="submit" value="submit">Reset</button>
+        </form>
+        </div>
+        <br>
+        <hr>
+    <!------------------------------Jquery--------------------------->
+        <h2>This is a heading</h2>
+        
+        <p>This is a paragraph</p>
+        <P>This is another paragraph.</P>
+        
+        <button class="btn">Click me to hide paragraphs</button>
+        <button class="btn2">Click me to hide paragraphs</button>
+        <button class="btn3">Click me to slide paragraphs</button>
+        <button class="btn4">Click me to slide paragraphs</button>
+        <button class="btn5">Click me to animate</button>
+<hr>
+        <!--flip card css effect-->
+        <section class="flip-card">
+            <div class="flip-card-inner">
+                 <div class="flip-card-front">
+            <img src="images/pngtree-blue-business-atmosphere-business-card-background-image_243064.jpg" alt="Avatar" style="width: 300px; height: 200px;">
+            </div>
+             <div class="flip-card-back">
+            <h1>SHAHBAZ  HUSSAIN</h1>
+            <h2>Front-End Developer</h2>
+        <p>Programmer</p>
+        <p>I love to programme in my spare time. If you wanna learn anything just contact me to have with you.</p>
+             </div>
+            </div>
+        </section>
+    </body>
+</html>
